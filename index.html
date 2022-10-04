@@ -5,7 +5,22 @@
     <body>
         <h1>Launches</h1>
         <p>Hello world</p>
-
+        <script type="text/javascript">
+            async function fetchAsync(url) {
+                let response = await fetch(url);
+                let data = await response.json();
+                console.log(data);
+                return data;
+            }
+        </script>
+        <table>
+            <script type="text/javascript"> 
+                array.forEach(data => {
+                    document.write("<table>");
+                });
+            </script>
+        </table>
+        <button type="button" class="btn btn-default" onclick="fetchAsync('https://api.spacexdata.com/v3/launches')">test api</button>
         <h1>Capsules</h1>
         <p>Hello world</p>
     </body>
